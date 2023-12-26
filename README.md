@@ -98,3 +98,7 @@ This project is licensed under the GNU General Public License v2.0 - see the LIC
 ## Acknowledgments
 
 [Nim](https://nim-lang.org/install.html)
+
+## Contact
+
+`jmsapps91@gmail.com`
