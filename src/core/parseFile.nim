@@ -41,6 +41,9 @@ proc parseFile*(filePath: string) =
         of TokenType(tkConst).repr:
           identifiers.add(parseIdentifiers(props))
 
+        of TokenType(tkFunc).repr:
+          identifiers.add(parseIdentifiers(props))
+
         of TokenType(tkProc).repr:
           identifiers.add(parseIdentifiers(props))
 
