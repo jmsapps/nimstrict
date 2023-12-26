@@ -22,6 +22,7 @@ Clone the repository:
 git clone git@github.com:jmsapps/nimstrict.git
 ```
 
+`cd` into the root directory:
 
 ```bash
 cd nimstrict
