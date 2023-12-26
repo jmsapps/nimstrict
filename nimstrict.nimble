@@ -3,7 +3,7 @@
 version = "0.1.0"
 author = "JMS Apps"
 description = "Enforce case sensitivity in Nim projects"
-license = "GNU General Public License v3.0"
+license = "GNU General Public License v2.0"
 
 srcDir = "src"
 bin = @["nimstrict"]
