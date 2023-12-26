@@ -56,7 +56,4 @@ proc parseFile*(filePath: string) =
         of TokenType(tkTemplate).repr:
           identifiers.add(parseIdentifiers(props))
 
-        of TokenType(tkFor).repr:
-          identifiers.add(parseIdentifiers(props))
-
   lintFile(filePath, deduplicate(identifiers))

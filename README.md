@@ -12,7 +12,7 @@ Nimstrict is a tool to enforce case sensitivity in Nim projects by identifying m
 
 ### Prerequisites
 
-Make sure you have [Nim](https://nim-lang.org/install.html) installed on your system.
+Make sure you have [Nim](https://nim-lang.org/install.html) installed. This README is currently geared towards Unix-like operating systems.
 
 ### Installation
 
@@ -53,7 +53,7 @@ echo my_var
 In the below example you can see that a warning is logged to console giving you the file path, the line number in parentheses, and the mismatch between the declared identifier `myVar` and its redeclaration:
 
 ```bash
-src/main.nim(3) Warning: mismatch between declaration 'myVar' and token 'my_var' [IncorrectCase]
+src/main.nim(3) Warning: mismatch between 'myVar' and redeclaration 'my_var' [IncorrectCase]
 ```
 
 The line number given here (3) is in reference to the offending redeclaration, as nimstrict will always enforce that you match the original declaration. As such, you may just as easily enforce the opposite convention:
@@ -67,7 +67,7 @@ echo myVar
 Which will in turn give you the following output in console:
 
 ```bash
-src/main.nim(3) Warning: mismatch between declaration 'my_var' and token 'myVar' [IncorrectCase]
+src/main.nim(3) Warning: mismatch between 'my_var' and redeclaration 'myVar' [IncorrectCase]
 ```
 
 ### Supported Identifier Declarations
@@ -82,7 +82,6 @@ Nimstrict currently supports parsing of the following identifier declarations:
 - import
 - macro
 - template
-- for
 
 More will likely be added in future versions.
 
