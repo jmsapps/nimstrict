@@ -14,12 +14,17 @@ Nimstrict is a tool to enforce case sensitivity in Nim projects by identifying m
 
 Make sure you have [Nim](https://nim-lang.org/install.html) installed. This README is currently geared towards Unix-like operating systems.
 
-### Installation
+### Installation (without nimble)
 
 Clone the repository:
 
 ```bash
 git clone git@github.com:jmsapps/nimstrict.git
+```
+
+
+```bash
+cd nimstrict
 ```
 
 Build the nimstrict binary using nimble:
