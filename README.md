@@ -1,6 +1,6 @@
 # Nimstrict
 
-Nimstrict is a tool to enforce case sensitivity in Nim projects by identifying mismatches between identifier declarations and their usage. The intention is to promote conventions locally to aid in such tools as `grep` for faster and more reliable debugging, while still encouraging Nim's global case insensitivity. The philosophy of Nimstrict is that every Nim codebase should be free to adhere to its own conventions, but that those conventions should be strict, enforceable, and internally consistent. This approach becomes crucial as Nim expands in usage, reaching larger
+Nimstrict is a tool to enforce case sensitivity in Nim projects by identifying mismatches between identifier declarations and their usage. The intention is to promote conventions locally to aid in such tools as `grep` for faster and more reliable debugging, while still encouraging Nim's global case insensitivity. The philosophy of Nimstrict is that every Nim codebase should be free to adhere to its own conventions, but that those conventions should be strict, enforceable, and internally consistent. This approach becomes crucial as Nim expands in usage, reaching larger production databases with growing teams.
 
 ## Features
 
