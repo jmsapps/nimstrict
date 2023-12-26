@@ -27,14 +27,14 @@ proc lintFile*(filePath: string, identifiers: seq[string]) =
 
     let splitLine = replacedLine.split(" ").filterIt(it.len > 0)
 
-    for token in splitLine:
+    for redeclaration in splitLine:
       for identifier in identifiers.mapIt(it):
-        let noUnderScoreToken = token.replace("_", "")
-        let noUnderScoreIdentifier = identifier.replace("_", "")
+        let comparisonIdentifier = identifier.replace("_", "").toLower
+        let comparisonRedeclaration = redeclaration.replace("_", "").toLower
 
         if
-          noUnderScoreToken.toLower == noUnderScoreIdentifier.toLower and
-          identifier[0] == token[0] and
-          identifier != token
+          comparisonIdentifier == comparisonRedeclaration and
+          identifier[0] == redeclaration[0] and
+          identifier != redeclaration
         :
-          echo getWarningMessage(filePath, fileIndex, identifier, token)
+          echo getWarningMessage(filePath, fileIndex, identifier, redeclaration)
